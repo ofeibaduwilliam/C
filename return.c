@@ -5,8 +5,7 @@ int cube(int number){
 }
 
 int main(){
-    int answer = cube(3);
-    printf("%d is the answer", answer);
+    printf("%d is the answer", cube(3));
     
     return 0;
 }
