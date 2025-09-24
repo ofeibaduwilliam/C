@@ -27,36 +27,29 @@ int main(){
                 if(flavour == 1 && size == 1){
                     printf("You ordered a small vanilla ice cream.");
                     cost = cost + 5;
-                    printf("\nWaiting time: %d minutes", wait);
                 }else if(flavour == 2 && size == 1){
                     printf("You ordered a small strawberry ice cream.");
                     cost = cost + 5;
-                    printf("\nWaiting time: %d minutes", wait);
                 }else if(flavour == 3 && size == 1){
                     printf("You ordered a small chocolate ice cream.");
                     cost = cost + 6;
-                    printf("\nWaiting time: %d minutes", wait);
                 }else if(flavour == 4 && size == 1){
                     printf("You ordered a small mango ice cream.");
                     cost = cost + 7;
-                    printf("\nWaiting time: %d minutes", wait);
                 }else if(flavour == 1 && size == 2){
                     printf("You ordered a large vanilla ice cream.");
                     cost = cost + 8;
-                    printf("\nWaiting time: %d minutes", wait);
                 }else if(flavour == 2 && size == 2){
                     printf("You ordered a large strawberry ice cream.");
                     cost = cost + 8;
-                    printf("\nWaiting time: %d minutes", wait);
                 }else if(flavour == 3 && size == 2){
                     printf("You ordered a large chocolate ice cream.");
                     cost = cost + 9;
-                    printf("\nWaiting time: %d minutes", wait);
                 }else if(flavour == 4 && size == 2){
                     printf("You ordered a large mango ice cream.");
                     cost = cost + 10;
-                    printf("\nWaiting time: %d minutes", wait);
                 }
+                printf("\nWaiting time: %d minutes", wait);
             }else{
                 printf("\nInvalid size entry\n");
             }
@@ -76,24 +69,21 @@ int main(){
                     printf("\nYour selected topping is Sprinkles");
                     cost = cost + 2;
                     wait = wait + 1;
-                    printf("\nWaiting time: %d minutes", wait);
                 }else if(topping=2){
                     printf("\nYour selected topping is Whipped Cream");
                     cost = cost + 3;
                     wait = wait + 1;
-                    printf("\nWaiting time: %d minutes", wait);
                 }else if(topping=3){
                     printf("\nYour selected topping is Chopped Nuts");
                     cost = cost + 4;
                     wait = wait + 1;
-                    printf("\nWaiting time: %d minutes", wait);
                 }else if(topping=4){
                     printf("\nYour selected topping is Coconut Shavings");
                     cost = cost + 5;
                     wait = wait + 1;
-                    printf("\nWaiting time: %d minutes", wait);
                 }
                 toppings = 0;
+                printf("\nWaiting time: %d minutes", wait);
             }else if (topping == 5){
                 toppings = 1;
             }else{
@@ -120,5 +110,10 @@ int main(){
 
     }
     printf("\nHere is your order\n Thanks for coming to Fiifi's Ice Cream");
+    int j= 10;
+    while (j>0){
+        printf("\n%d seconds left to close", j);
+
+    }
     return 0;
 }
